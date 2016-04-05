@@ -1,5 +1,17 @@
+/**
+ * JS piano plugin for jquery
+ * @method piano
+ * @version 1.0.0
+ * @author Panagiotis Vourtsis <panos@inspired-mobile.com>
+ */
 (function($) {
 
+    /**
+     * Here is my definition of the piano plugin in JQuery
+     * @name piano
+     * @param {Object} config - the parameters of the configuration of the librray
+     * @class
+     */
     $.fn.piano = function( config ) {
 
         var options = $.extend({
@@ -13,6 +25,12 @@
         this.demoPlaying = false;
         this.timeouts = [];
 
+        /**
+         * This will handle the click of the keys. It will calculate the key frequency and based on the tone will pass the sound for production.
+         * @function
+         * @name toneClick
+         * @param {Object} e - The event object from the element
+         */
         this.toneClick = function(e) {
             var key = $(e.currentTarget).data("key");
             var tone = $(e.currentTarget).data("tone");
@@ -25,6 +43,12 @@
             this.soundPlay(t);
         };
 
+        /**
+         * It will produce the sounds based on the frequence that is being passed
+         * @function
+         * @name soundPlay
+         * @param {Integer} freq - The frequence to play
+         */
         this.soundPlay = function(freq) {
             var now = context.currentTime;
             var oscillator = context.createOscillator();
@@ -42,6 +66,12 @@
             setTimeout(function() { oscillator.stop(); }, 1500);
         };
 
+        /**
+         * My first demo for when you click the demo 1 option | Coldplay - scientist intro
+         * @function
+         * @name demos
+         * @param {Object} e - The event object from the element
+         */
         this.demos = function(e) {
 
             if((typeof(e) !== 'undefined' && this.demoPlaying) ) {
@@ -161,6 +191,12 @@
             }
         };
 
+        /**
+         * My second demo for when you click the demo 2 option | Great Big World - Say Something
+         * @function
+         * @name demos2
+         * @param {Object} e - The event object from the element
+         */
         this.demos2 = function(e) {
 
             if((typeof(e) !== 'undefined' && this.demoPlaying) ) {
@@ -214,6 +250,11 @@
             }
         };
 
+        /**
+         * This function creates all the dom objects for the piano and bind events on them
+         * @function
+         * @name init
+         */
         this.init = function() {
             var $container = $("<div>", {class: "keyboard"});
             var $left_speaker = $("<div>", {class: "speaker left_speaker"});
@@ -226,6 +267,10 @@
                 $item1.html("Demo 1");
                 $options.append($item1);
             }
+
+            /**
+             * @todo make the second demo
+             */
             //if(options.tone >= 3) {
             //    var $item2 = $("<div>", {class: "item"});
             //    $item2.click($.proxy(this.demos2, this));
@@ -252,6 +297,13 @@
             $(this).append($container);
         };
 
+        /**
+         * This function determines and returns the frequency for a specific key
+         * @function
+         * @name frequencySelector
+         * @param {String} note - The note that was clicked
+         * @returns {Integer} return the integer of the frequency
+         */
         this.frequencySelector = function(note) {
             var frequency = '';
 
@@ -297,6 +349,9 @@
             return frequency;
         };
 
+        /**
+         * Here i am initializing the plugin
+         */
         this.init();
 
         return this;

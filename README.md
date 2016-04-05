@@ -1,6 +1,6 @@
 # JS Piano
 
-A fun project that i did to demonstrate the power of JS !!
+A fun project that i did to demonstrate the power of JS !! I am using the power of audioContext. That's why you will only be able to see it under chrome os firefox for now.
 
   - You can play any track you want
   - Define as many divs you want to make instances
