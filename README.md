@@ -27,7 +27,7 @@ You can also use the tone option to make the piano larger or smaller !
 
 ```js
 $(".piano-instance-1").piano({
-    tone: 3
+    tone: 2
 });
 ```
 
