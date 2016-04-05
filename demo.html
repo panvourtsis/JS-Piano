@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="piano.css" rel="stylesheet"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="jquery.piano.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".piano-instance-1").piano();
+            $(".piano-instance-2").piano({
+                tone: 2
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="piano piano-instance-1"></div>
+
+    <div class="piano piano-instance-2"></div>
+
+</body>
+</html>
