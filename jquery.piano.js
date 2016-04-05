@@ -3,7 +3,7 @@
     $.fn.piano = function( config ) {
 
         var options = $.extend({
-            tone: 2
+            tone: 1
         }, config );
 
         var context = new window.AudioContext();
@@ -63,16 +63,16 @@
                 for (var i = 0; i < 4; i++) {
                     self.timeouts.push(setTimeout(function () {
                         if(self.demoPlaying) {
-                            $("body " + self.selector).find("div[data-key='D'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                            $("body " + self.selector).find("div[data-key='D'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                 $(this).removeClass("active");
                                 next();
                             });
 
-                            $("body " + self.selector).find("div[data-key='F'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                            $("body " + self.selector).find("div[data-key='F'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                 $(this).removeClass("active");
                                 next();
                             });
-                            $("body " + self.selector).find("div[data-key='A'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                            $("body " + self.selector).find("div[data-key='A'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                 $(this).removeClass("active");
                                 next();
                             });
@@ -83,16 +83,16 @@
                     for (var i = 0; i < 4; i++) {
                         setTimeout(function () {
                             if(self.demoPlaying) {
-                                $("body " + self.selector).find("div[data-key='D'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='D'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
 
-                                $("body " + self.selector).find("div[data-key='F'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='F'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
-                                $("body " + self.selector).find("div[data-key='A#'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='A#'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
@@ -103,7 +103,7 @@
 
                 self.timeouts.push(setTimeout(function () {
                     if(self.demoPlaying) {
-                        $("body " + self.selector).find("div[data-key='C'][data-tone='3']").mousedown().addClass("active").delay(500).queue(function (next) {
+                        $("body " + self.selector).find("div[data-key='C'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
                             $(this).removeClass("active");
                             next();
                         });
@@ -114,16 +114,16 @@
                     for (var i = 0; i < 4; i++) {
                         setTimeout(function () {
                             if(self.demoPlaying) {
-                                $("body " + self.selector).find("div[data-key='C'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='C'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
 
-                                $("body " + self.selector).find("div[data-key='F'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='F'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
-                                $("body " + self.selector).find("div[data-key='A'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='A'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
@@ -135,16 +135,16 @@
                     for (var i = 0; i < 4; i++) {
                         setTimeout(function () {
                             if(self.demoPlaying) {
-                                $("body " + self.selector).find("div[data-key='C'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='C'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
 
-                                $("body " + self.selector).find("div[data-key='F'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='F'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
-                                $("body " + self.selector).find("div[data-key='G'][data-tone='2']").mousedown().addClass("active").delay(500).queue(function (next) {
+                                $("body " + self.selector).find("div[data-key='G'][data-tone='1']").mousedown().addClass("active").delay(500).queue(function (next) {
                                     $(this).removeClass("active");
                                     next();
                                 });
