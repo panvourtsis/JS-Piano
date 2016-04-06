@@ -11,7 +11,7 @@ A fun project that i did to demonstrate the power of JS !! I am using the power 
 
 ### DEMO
 
-Try out the [demo] online
+Try out the <a href="http://codepen.io/panvourtsis/pen/xVPMvo" target="_blank">demo</a> online
 
 [demo]: <http://codepen.io/panvourtsis/pen/xVPMvo>
 
