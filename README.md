@@ -9,6 +9,12 @@ A fun project that i did to demonstrate the power of JS !! I am using the power 
   - Listen my demo of coldplay (scientist) -- without even a lesson !!
   - happy playing !
 
+### DEMO
+
+Try out the [demo] online
+
+[demo]: <http://codepen.io/panvourtsis/pen/xVPMvo>
+
 ### Installation
 
 You only need to define it on html and js with jquery.
